@@ -1,0 +1,92 @@
+body {
+    background-image: url("bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: 65cm 47cm;
+    background-attachment: fixed;
+    
+   
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+} 
+
+h1 {
+    text-align: center;
+
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: right;
+}
+
+.sec {
+    margin-top: 2%;
+    text-align: right;
+}
+
+.sec  a {
+    padding: .7% 2.5%;
+    margin: 2% 1%;
+    text-decoration: none;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    font-size: 25px;
+    color: solid cyan;
+}
+
+h3 {
+    color: white;
+    font-family: fantasy;
+    font-size: 25px;
+    text-align: center;
+    background-color: #fff2ac;
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+
+}
+
+ .fort {
+     color: solid black;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 20px;
+     text-align: center;
+ }
+
+ #det {
+     font-family: cursive;
+     font-size: 25px;
+     text-align:center;
+ }
+
+ .face {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    height: 40px;
+    padding: 30px;
+    background: white;
+    transition: .5s ease-in-out;
+}
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%{
+        transform:scale(1,0.7)
+    }
+    
+    95% {
+        transform: scale(1, 1);
+    }
+}
+
+
